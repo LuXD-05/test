@@ -56,19 +56,27 @@
         </ol>
     </p>
     <br>tabella
-    <table border="5" cellpadding="5" cellspacing="0">
+    <table border="1" cellpadding="5" cellspacing="0">
         <!-- "table" = usato per creare tabelle -->
+        <!-- "border" = come per immagini ma alle celle -->
+        <!-- "cellpadding" = dimensioni delle celle -->
+        <!-- "cellspacing" = spazio tra le singole celle -->
         <tr>
+        <!-- "tr" usato per righe orizzontali -->
             <th></th>
+            <!-- "th" testo nella cella (grassetto) -->
             <th>month</th>
             <th>rent</th>
             <th colspan="2">utilities</th>
+            <!-- "colspan" = numero di righe di celle verticali che la cella comnprende sotto di essa -->
             <th>eating</th>
             <th>out</th>
         </tr>
         <tr>
             <td rowspan="2">summer</td>
+            <!-- "rowspan" = numero di righe orizzontali che la cella comprende alla sua destra -->
             <td>july</td>
+            <!-- "td" testo nella cella (normale) -->
             <td>$1500</td>
             <td>$100</td>
             <td>$50</td>
