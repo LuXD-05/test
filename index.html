@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Un sito</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- l'insieme serve a implementare il file css in questo corrente -->
 </head>
 
 <body>
@@ -21,19 +23,25 @@
         <!-- i/(em) = italics -->
         <!-- u = underlined -->
         <hr>
+        <!-- "hr" linea orizzontale -->
         <!-- "href" = link ipertestuale -->
+    <div id="links">
         <br><strong>link for youtube (on this page):</strong>
         <br><a href="https://www.youtube.com" target="_self">yt</a>
         <!-- target="_self" = mostra (in questo caso link) sulla pagina corrente -->
         <br><strong>link for youtube (on another page):</strong> 
         <br><a href="https://www.youtube.com" target="_blank">yt</a>
         <!-- target="_blank" = mostra su una nuova scheda -->
+    </div>
+    <div id="immagini">
         <br><br> immagine
         <br><img src="https://via.placeholder.com/150x100">
         <!-- img "src" = cerca immagini sul web -->
         <br><br> immagine col bordo
         <br><img src="https://via.placeholder.com/150x100" border="10">
         <!-- "border" = aggiunge bordo a immagine -->
+    </div>
+    <div id="elenchi">
         <ul>
         <!-- "ul" = elenco puntato -->
             <li>mele</li>
@@ -41,7 +49,7 @@
             <ul>
             <!-- se riscritto sotto un altro "ul" da una tabulazione e definisce sottoinsieme puntato (come per numerato) -->
                 <li>verdi</li>
-                <li>rosse</li>
+                <li class="y">rosse</li>
                 <li>gialle</li>
             </ul>
             <li>arance</li>
@@ -54,7 +62,9 @@
             <li>arance</li>
             <li>ananas</li>
         </ol>
+    </div>
     </p>
+<div id="tabella">
     <br>tabella
     <table border="1" cellpadding="5" cellspacing="0">
         <!-- "table" = usato per creare tabelle -->
@@ -91,8 +101,32 @@
             <td>$300</td>
             <td>$100</td>
         </tr>
-
     </table>
+</div>
+<div id="boh">
+    <div id="boh1">
+        <br><br><input type="text">
+        <!-- usato per inserimento (ora testo) -->
+    </div>
+    <div id="boh2">
+        <br><h5 style="text-align:center;">ciao</h5>
+        <!-- allinea il testo (start, end, left, right, center, justify, match-parent) -->
+    </div>
+    <div id="boh3">
+        <br><h5 style="color:crimson;">ciao</h5>
+        <!-- usato per colore del testo -->
+    </div>
+    <div id="boh4">
+        <br><h5 style="font-family:Impact;">ciao</h5>
+        <!-- font-family definisce il font -->
+    </div>
+    <div id="boh5">
+        <h5 class="x">CIAO</h5>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><hr>
+
+
 
 </body>
 

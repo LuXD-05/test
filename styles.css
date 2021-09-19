@@ -1,0 +1,63 @@
+.x {
+    color:aqua;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: end;
+    background-color: black;
+    cursor: row-resize;
+    direction: initial;
+}
+body {
+    background: lavender;
+    /* o anche "background-color" */
+}
+#links {
+    float: left;
+    /* aggancia a qualcosa (tipo destra o sinistra) */
+}
+#elenchi {
+    float: none;
+    padding-top: 100px;
+    /* "padding" = spazio tra sezione e *altro oggetto* (top = dall'alto | left = da sinistra | right = da destra | bottom = dal basso) */
+}
+#immagini {
+    float: right;
+    padding-right: 160px;
+}
+
+#tabella {
+    float: right;
+    padding-top: 20px;
+    padding-right: 300px;
+    padding-left: 300px;
+}
+
+#boh {
+    left: 20px;
+    position: absolute;
+    bottom: 30px;
+}
+
+#boh1 {
+    float: left;
+}
+#boh2 {
+    float: left;
+    padding-left: 100px;
+}
+#boh3 {
+    float: left;
+    padding-left: 100px;
+}
+#boh4 {
+    float: left;
+    padding-left: 100px;
+}
+#boh5 {
+    float: left;
+    padding-left: 100px;
+}
+
+#elenchi .y {
+    color: lightcoral;
+}
