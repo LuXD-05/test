@@ -2,7 +2,7 @@
     color:aqua;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: end;
+    text-align: left;
     background-color: black;
     cursor: row-resize;
     direction: initial;
@@ -34,12 +34,12 @@ body {
 
 #boh {
     left: 20px;
-    position: absolute;
+    /* (position: absolute;) --> ancora in una posizione*/
     bottom: 30px;
 }
 
 #boh1 {
-    float: left;
+    float: right;
 }
 #boh2 {
     float: left;
