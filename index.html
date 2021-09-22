@@ -128,21 +128,37 @@
     <!-- input = per inserimento e interazioni di utente -->
     <!-- placeholdre = per vedere il testo sfumato nella textbox -->
     <form>
-        <br><button>Invia</button><br>
+        <br><button>Invia</button><br><br>
     </form>
     <!-- con "form" puoi raggruppare gli input in un form (come per button) -->
 </div>
 <div>
     <form action="">
         <label for="username">
+            <!-- label FOR = quando si clicca su questa scritta si collega all' "input id" -->
             Username:
         </label>
-        <input id="username" type="text" placeholder="username">
+        <input id="username" type="email" placeholder="username">
+        <!-- input id = per collegare con cio che ce scritto tra le "" (e anche con il label for)-->
         <label for="password">
             Password:
         </label>
-        <input id="password" type="password" placeholder="password">
+        <input id="password" type="password" placeholder="password"><br>
+        <p>Scegli il tuo genere</p>
+        <label for="maschio">maschio</label>
+        <input name="genere" id="maschio" type="radio">
+        <!-- input name = solo per definire il nome di un input -->
+        <label for="femmina">femmina</label>
+        <input name="genere" id="femmina" type="radio"><br><br>
+        <select>
+            <option>Facebook</option>
+            <option>Instagram</option>
+            <option>Whatsapp</option>
+        </select>
     </form>
+</div>
+<div id="textarea">
+    <textarea cols="30" rows="10">scrivi</textarea>
 </div>
 
 </body>

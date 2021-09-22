@@ -61,3 +61,7 @@ body {
 #elenchi .y {
     color: lightcoral;
 }
+
+#textarea {
+    float: right;
+}
