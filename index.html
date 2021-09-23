@@ -7,24 +7,40 @@
     <link rel="stylesheet" href="styles.css">
     <!-- l'insieme serve a implementare il file css in questo corrente -->
 </head>
-
 <body>
-    <h1>Titolo</h1>
-    <!-- "h1" usato per titoli -->
-    <h2>Sottotitolo</h2>
-    <!-- "h2" usato per sottotitoli, si scende fino ad h6 e diminuisce importanza e grandezza del testo. -->
-    <p>???</p>
-    <p>
-        <br><b>ciao</b>
-        <!-- "br" (all'inizio) usato per andare a capo -->
-        <br><i>ciao</i>
-        <br><u>ciao</u>
-        <!-- b/(strong) = bold -->
-        <!-- i/(em) = italics -->
-        <!-- u = underlined -->
-        <hr>
-        <!-- "hr" linea orizzontale -->
-        <!-- "href" = link ipertestuale -->
+    <div id="titoli...">
+        <h1 title="Questo è un titolo" style="font-size:50px;">Titolo</h1>
+        <!-- "h1" usato per titoli -->
+        <!-- title (attributo) se vado sopra al testo con il cursore viene mostrato il testo tra le "" -->
+        <!-- style (attributo) definisce lo stile del testo -->
+        <!-- font-size = può aumentare/diminuire la grandezza di un testo -->
+        <h2>Sottotitolo</h2>
+        <!-- "h2" usato per sottotitoli, si scende fino ad h6 e diminuisce importanza e grandezza del testo. -->
+        <p> 
+            <!-- "br" (all'inizio) usato per andare a capo -->
+            <b>ciao</b>
+            <i>ciao</i>
+            <u>ciao</u>
+            <small>ciao</small>
+            <mark>ciao</mark>
+            <del>ciao</del>
+            <sub>ciao</sub>
+            <sup>ciao</sup>
+            <!-- b/(strong) = grassetto / importante-->
+            <!-- i/(em) = corsivo / empatizzato (per lettore testi) -->
+            <!-- u/ins = sottolineato -->
+            <!-- small = piccolo -->
+            <!-- mark = evidenziato -->
+            <!-- del = sbarrato -->
+            <!-- sub = scritto un po piu in basso del normale-->
+            <!-- sup = scritto un po piu in alto del normale -->
+            <hr>
+            <!-- "hr" linea orizzontale -->
+            <!-- "a href" = link ipertestuale -->
+        </p>
+    </div>
+
+<p>
     <div id="links">
         <br><strong>link for youtube (on this page):</strong>
         <br><a href="https://www.youtube.com" target="_self">yt</a>
@@ -33,14 +49,17 @@
         <br><a href="https://www.youtube.com" target="_blank">yt</a>
         <!-- target="_blank" = mostra su una nuova scheda -->
     </div>
+
     <div id="immagini">
         <br><br> immagine
-        <br><img src="https://via.placeholder.com/150x100">
+        <br><img src="https://via.placeholder.com/150x100" alt="immagine1">
         <!-- img "src" = cerca immagini sul web -->
+        <!-- alt (attributo) mostra il testo contenuto tra le "" nel caso l'immagine non sia disponibile alla visione -->
         <br><br> immagine col bordo
         <br><img src="https://via.placeholder.com/150x100" border="10">
         <!-- "border" = aggiunge bordo a immagine -->
     </div>
+
     <div id="elenchi">
         <ul>
         <!-- "ul" = elenco puntato -->
@@ -63,7 +82,8 @@
             <li>ananas</li>
         </ol>
     </div>
-    </p>
+</p>
+
 <div id="tabella">
     <br>tabella
     <table border="1" cellpadding="5" cellspacing="0">
@@ -103,6 +123,7 @@
         </tr>
     </table>
 </div>
+
 <div id="boh">
     <div id="boh2">
         <br><h5 style="text-align:center;">1</h5>
@@ -113,7 +134,7 @@
         <!-- usato per colore del testo -->
     </div>
     <div id="boh4">
-        <br><h5 style="font-family:Impact;"3></h5>
+        <br><h5 style="font-family:Impact;">3</h5>
         <!-- font-family definisce il font -->
     </div>
     <div id="boh5">
@@ -121,17 +142,19 @@
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><hr>
 </div>
+
 <div>
     <input type="checkbox">
-    <input type="text" placeholder="username">
-    <input type="password" placeholder="password">
+    <input type="text" placeholder="Nome">
+    <input type="text" placeholder="Cognome">
     <!-- input = per inserimento e interazioni di utente -->
-    <!-- placeholdre = per vedere il testo sfumato nella textbox -->
+    <!-- placeholder = per vedere il testo sfumato nella textbox -->
     <form>
         <br><button>Invia</button><br><br>
     </form>
     <!-- con "form" puoi raggruppare gli input in un form (come per button) -->
 </div>
+
 <div>
     <form action="">
         <label for="username">
@@ -147,21 +170,39 @@
         <p>Scegli il tuo genere</p>
         <label for="maschio">maschio</label>
         <input name="genere" id="maschio" type="radio">
-        <!-- input name = solo per definire il nome di un input -->
+        <!-- input name = serve per raggruppare diversi elementi in un form e (in questo caso) fa in modo che uno solo degli
+             input possa essere selezionato (se si seleziona uno l'altro si deseleziona)-->
         <label for="femmina">femmina</label>
         <input name="genere" id="femmina" type="radio"><br><br>
         <select>
+            <!-- select = usato per creare un menù a tendina -->
             <option>Facebook</option>
             <option>Instagram</option>
             <option>Whatsapp</option>
         </select>
     </form>
 </div>
-<div id="textarea">
+
+<div id="textareasss">
     <textarea cols="30" rows="10">scrivi</textarea>
+    <pre>
+        ciao ciao ciao ciao
+      
+        ciao ciao ciao ciao
+    </pre>
+    <!-- pre = permette di trascrivere un paragrafo tale e quale a come è scritto nel codice nella pagina web -->
+    <!--
+        style:
+        "background-color" for background color
+        "color" for text colors
+        "font-family" for text fonts
+        "font-size" for text sizes
+        "text-align" for text alignment 
+    -->
 </div>
+<div>
 
-
+</div>
 
 </body>
 </html>
