@@ -6,36 +6,56 @@
     <title>esercizio</title>
 </head>
 <body>
-    <div id="Testo">
-        <h1>Crea un nuovo account</h1><br>
-        <h3>E' gratis (ti rubiamo i dati)</h3><br>    
-    </div>
-    <div id="Labels">
-        <form>
-                <input type="text" placeholder="Nome">
-                <input type="text" placeholder="Cognome"><br>
-                <input type="username" placeholder="Username"><br>
-                <input type="password" placeholder="Password"><br>
-        </form>
-    </div>
-    <div id="Testo2">
-        <h2>Data di nascita</h2><br>
-    </div>
-    <div id="select">
-        <select title="Giorno">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-        </select>
-        <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-        </select>
-        <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-        </select>
-    </div>
+    <h1>Crea un nuovo account</h1>
+    <h3>E' gratis (ti rubiamo i dati)</h3>
+    <form>
+        <label for="nome"></label>
+        <input type="text" id="nome" placeholder="Nome" required>
+        <label for="cognome"></label>
+        <input type="text" id="cognome" placeholder="Cognome" required>
+        <div>
+            <label for="email"></label>
+            <input id="email" type="email" placeholder="email" pattern=".{5.20}" required title="5 to 20 characters" required>
+        </div>
+        <div>
+            <label for="password"></label>
+            <input id="password" type="password" placeholder="Password" pattern=".{5.20}" required title="5 to 20 characters" required>
+        </div>
+
+            <h3>Data di nascita</h3>
+        <div>
+            <select>
+                <option disabled selected>Giorno</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <select>
+                <option disabled selected>Mese</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <select>
+                <option disabled selected>Anno</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>    
+        <div>
+            <label for="maschio">male</label>
+            <input name="genere" id="maschio" type="radio">
+            <label for="femmina">female</label>
+            <input name="genere" id="femmina" type="radio">
+        </div>
+        <div>
+            <label for="check">Accetto le condizioni</label>
+            <input id="check" type="checkbox">
+        </div>
+        <div>
+            <button>Iscriviti</button>
+        </div>
+
+    </form>
 </body>
